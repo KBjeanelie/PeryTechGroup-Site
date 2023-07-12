@@ -6,4 +6,4 @@ class IndexView(View):
     template_name = "index.html"
 
     def get(self, request):
-        return render(request, self.template_name, self.context_object)
+        return render(request, self.template_name)
