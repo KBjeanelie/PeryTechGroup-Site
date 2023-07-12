@@ -50,7 +50,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="#" class="navbar-brand p-0">
+                <a href="{% url 'index' %}" class="navbar-brand p-0">
                     <h1 class="m-0">PeryTechGroup</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
@@ -92,10 +92,10 @@
                     </div>
                     <div class="col-md-4 col-lg-4">
                         <p class="section-title text-white h5 mb-4">Lien Rapide<span></span></p>
-                        <a class="btn btn-link" href="about.html">À propos</a>
-                        <a class="btn btn-link" href="contact.html">Contactez-nous</a>
-                        <a class="btn btn-link" href="service.html">Nos Services</a>
-                        <a class="btn btn-link" href="project.html">Projets</a>
+                        <a class="btn btn-link" href="{% url 'about' %}">À propos</a>
+                        <a class="btn btn-link" href="{% url 'contact' %}">Contactez-nous</a>
+                        <a class="btn btn-link" href="{% url 'services' %}">Nos Services</a>
+                        <a class="btn btn-link" href="{% url 'projets' %}">Projets</a>
                         <a class="btn btn-link" href="">Privacy Policy</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
                     </div>

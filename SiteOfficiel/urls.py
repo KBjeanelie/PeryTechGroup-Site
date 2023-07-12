@@ -5,7 +5,7 @@ from SiteOfficiel.views import AboutView, ContactView, IndexView, ProjetView, Se
 
 
 urlpatterns = [
-    path('', IndexView.as_view()),
+    path('', IndexView.as_view(), name='index'),
     path('services/', ServiceView.as_view(), name='services'),
     path('about/', AboutView.as_view(), name='about'),
     path('projets/', ProjetView.as_view(), name='projets'),
