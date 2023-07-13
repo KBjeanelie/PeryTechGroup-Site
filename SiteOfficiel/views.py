@@ -58,4 +58,36 @@ def contact_view(request):
         # Renvoyer le texte de succès
         return HttpResponse('Message envoyé avec succès :)')
 
-    return render(request, 'contact') 
+    return render(request, 'contact')
+
+# def contact_view(request):
+#     if request.method == 'POST':
+#         name = request.POST.get('fullname')
+#         email = request.POST.get('email')
+#         message = request.POST.get('message')
+
+#         # Préparer le contenu de l'e-mail
+#         context = {
+#             'name': name,
+#             'email': email,
+#             'message': message,
+#         }
+#         email_html_message = render_to_string('email_templates/contact_email.html', context)
+#         email_plain_message = strip_tags(email_html_message)
+
+#         # Envoyer l'e-mail
+#         email_subject = 'Nouveau message de contact'
+#         email = EmailMessage(
+#             email_subject,
+#             email_plain_message,
+#             'Expéditeur du message <noreply@example.com>',
+#             ['elijahwalter2018@gmail.com'],  # Remplacez par votre adresse e-mail de réception
+#             reply_to=[email],
+#         )
+#         email.content_subtype = 'html'
+#         email.send()
+
+#         # Renvoyer la réponse de succès
+#         return render(request, 'success.html')
+
+#     return render(request, 'contact.html')
