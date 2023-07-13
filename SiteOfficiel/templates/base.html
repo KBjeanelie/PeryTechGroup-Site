@@ -51,15 +51,15 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="{% url 'index' %}" class="navbar-brand p-0">
-                    {% comment %} <h1 class="m-0">PeryTechGroup</h1> {% endcomment %}
-                    <img src="{% static 'img/logo.jpeg' %}" alt="Logo">
+                    <h1 class="m-0">PeryTechGroup</h1>
+                    {% comment %} <img src="{% static 'img/logo.jpeg' %}" alt="Logo"> {% endcomment %}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="" class="nav-item nav-link active">Accueil</a>
+                        <a href="{% url 'index' %}" class="nav-item nav-link">Accueil</a>
                         <a href="{% url 'about' %}" class="nav-item nav-link">À propos</a>
                         <a href="{% url 'services' %}" class="nav-item nav-link">Services</a>
                         <a href="{% url 'projets' %}" class="nav-item nav-link">Projets</a>
@@ -80,9 +80,9 @@
                 <div class="row g-5">
                     <div class="col-md-4 col-lg-4">
                         <p class="section-title text-white h5 mb-4">Addresse<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>50, rue Nkouma Brazzaville, Congo</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+242 06 483 8870</p>
+                        <p><i class="fa fa-envelope me-3"></i>jeaneliekubembula@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -103,22 +103,22 @@
                         <p class="section-title text-white h5 mb-4">PORTOFOLIO<span></span></p>
                         <div class="row g-2">
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                                <img class="img-fluid" src="{% static 'img/portfolio-1.jpg' %}" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                                <img class="img-fluid" src="{% static 'img/portfolio-2.jpg' %}" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                                <img class="img-fluid" src="{% static 'img/portfolio-3.jpg' %}" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                                <img class="img-fluid" src="{% static 'img/portfolio-4.jpg' %}" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                                <img class="img-fluid" src="{% static 'img/portfolio-5.jpg' %}" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                                <img class="img-fluid" src="{% static 'img/portfolio-6.jpg' %}" alt="Image">
                             </div>
                         </div>
                     </div>

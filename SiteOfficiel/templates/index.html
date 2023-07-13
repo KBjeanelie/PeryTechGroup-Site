@@ -11,9 +11,12 @@
                 <h1 class="text-white mb-4 animated slideInDown">
                     Une Agence Numérique D'Intelligence Et De Créatifs
                 </h1>
-                <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
-                <a href="#" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Lire Plus</a>
-                <a href="#" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Nous Contactez</a>
+                <p class="text-white pb-3 animated slideInDown">
+                    Nous sommes une équipe passionnée composée d'experts chevronnés, prêts à transformer vos idées en réalité numérique.
+                    Que vous soyez une petite entreprise en pleine croissance ou une grande entreprise établie, nous proposons une gamme complète de services informatiques personnalisés pour répondre à vos exigences spécifiques.
+                </p>
+                <a href="{% url 'about' %}" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Lire Plus</a>
+                <a href="{% url 'contact' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Nous Contactez</a>
             </div>
             <div class="col-lg-6 text-center text-lg-start">
                 <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
@@ -32,21 +35,27 @@
                         <div class="feature-item bg-light rounded text-center p-4">
                             <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
                             <h5 class="mb-3">Marketing Numérique</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0">
+                                Notre agence de marketing numérique vous offre des stratégies innovantes et des solutions personnalisées pour maximiser votre présence en ligne, attirer des clients qualifiés et augmenter vos conversions.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="feature-item bg-light rounded text-center p-4">
                             <i class="fa fa-3x fa-search text-primary mb-4"></i>
                             <h5 class="mb-3">SEO & Backlinks</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0">
+                                Obtenez une meilleure position dans les résultats de recherche et attirez plus de clients potentiels grâce à notre expertise en SEO et Backlinks.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="feature-item bg-light rounded text-center p-4">
                             <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                            <h5 class="mb-3">Conception et développement</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">Conception et développement d'application</h5>
+                            <p class="m-0">
+                                De la conception de l'interface utilisateur à la programmation avancée, nous mettons en œuvre les meilleures pratiques pour offrir une expérience utilisateur exceptionnelle.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -54,18 +63,19 @@
         </div>
         <!-- Feature End -->
 
-
         <!-- About Start -->
-        <!-- <div class="container-xxl py-5">
+        <div class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <p class="section-title text-secondary">About Us<span></span></p>
-                        <h1 class="mb-5">#1 Digital solution with 10 years of experience</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <p class="section-title text-secondary">À propos de nous<span></span></p>
+                        <h1 class="mb-5">#Solution numérique n°1 au Congo Brazzaville</h1>
+                        <p class="mb-4">
+                            Ne laissez pas vos idées rester lettre morte. Contactez-nous dès aujourd'hui et découvrez comment notre agence numérique peut vous accompagner vers de nouveaux sommets dans le monde numérique. 
+                        </p>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">Digital Marketing</p>
+                                <p class="mb-2">Marketing en ligne et référencement (SEO)</p>
                                 <p class="mb-2">85%</p>
                             </div>
                             <div class="progress">
@@ -74,7 +84,7 @@
                         </div>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">SEO & Backlinks</p>
+                                <p class="mb-2">Analyse de données et suivi des performances</p>
                                 <p class="mb-2">90%</p>
                             </div>
                             <div class="progress">
@@ -83,21 +93,21 @@
                         </div>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">Design & Development</p>
+                                <p class="mb-2">Conception & Developpement d'application</p>
                                 <p class="mb-2">95%</p>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
+                        <a href="{% url 'services' %}" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Services</a>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{% static 'img/about.png' %}">
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- About End -->
 
 
@@ -131,79 +141,96 @@
         <!-- Facts End -->
 
 
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="section-title text-secondary justify-content-center"><span></span>Nos Services<span></span></p>
-                    <h1 class="text-center mb-5">Les Solutions que Nous Proposons</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-search fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Optimisation du référencement</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
+            <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5">
+            <div class="wow fadeInUp" data-wow-delay="0.05s">
+                <p class="section-title text-secondary justify-content-center"><span></span>Nos Services<span></span></p>
+                <h1 class="text-center mb-5">Les Solutions que Nous Proposons</h1>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex flex-column text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class="fab fa-android fa-2x"></i>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-laptop-code fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Conception de sites web</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-facebook-f fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Marketing des médias sociaux</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-mail-bulk fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Marketing par courrier électronique</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-thumbs-up fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Publicité PPC</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-android fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Développement d'applications</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
-                        </div>
+                        <h5 class="mb-3">Développement d'applications</h5>
+                        <p class="m-0">
+                            Nous développons des applications mobiles innovantes pour les plateformes iOS et Android. De la conception à la programmation, nous offrons des solutions qui captivent votre public cible et renforcent votre présence mobile.
+                        </p>
+                        <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
+                
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class="fa fa-laptop-code fa-2x"></i>
+                        </div>
+                        <h5 class="mb-3">Conception de sites web</h5>
+                        <p class="m-0">
+                            Notre agence numérique crée des sites web sur mesure qui répondent aux besoins uniques de votre entreprise. Nous concevons des interfaces attrayantes, conviviales et optimisées pour offrir une expérience utilisateur exceptionnelle.
+                        </p>
+                        <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.05">
+                    <div class="service-item d-flex flex-column text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class="fa fa-search fa-2x"></i>
+                        </div>
+                        <h5 class="mb-3">Marketing en ligne et référencement (SEO)</h5>
+                        <p class="m-0">
+                            Nous proposons des stratégies de marketing en ligne efficaces pour augmenter la visibilité de votre entreprise sur les moteurs de recherche. Notre équipe de référencement mettra en place des techniques avancées pour améliorer votre classement dans les résultats de recherche et augmenter le trafic vers votre site web.
+                        </p>
+                        <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex flex-column text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class="fas fa-chart-bar fa-2x"></i>
+                        </div>
+                        <h5 class="mb-3">Analyse de données et suivi des performances</h5>
+                        <p class="m-0">
+                            Nous mettons en place des outils d'analyse puissants pour suivre les performances de votre site web, de vos campagnes marketing et de vos applications. Nous fournissons des rapports détaillés et des recommandations pour vous aider à prendre des décisions basées sur des données concrètes.
+                        </p>
+                        <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.05">
+                    <div class="service-item d-flex flex-column text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class="fas fa-comments-dollar fa-2x"></i>
+                        </div>
+                        <h5 class="mb-3">Stratégie de marketing numérique</h5>
+                        <p class="m-0">
+                            Notre équipe vous aide à élaborer une stratégie de marketing numérique efficace pour atteindre vos objectifs commerciaux. Nous optimisons votre présence en ligne à travers des campagnes de référencement, de publicité payante, de médias sociaux et bien plus encore.
+                        </p>
+                        <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class=" 	fas fa-magic fa-2x"></i>
+                        </div>
+                        <h5 class="mb-3">Design d'interface utilisateur (UI) et d'expérience utilisateur (UX)</h5>
+                        <p class="m-0">
+                            Nos experts en design travaillent en étroite collaboration avec vous pour concevoir des interfaces et des expériences utilisateur intuitives et captivantes. Nous mettons l'accent sur l'optimisation de la convivialité, de l'accessibilité et de l'attrait visuel de votre produit numérique.
+                        </p>
+                        <a class="btn btn-square" href="#"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
-        <!-- Service End -->
-
+    </div>
+    <!-- Service End -->
 
         <!-- Newsletter Start -->
         <!-- <div class="container-xxl bg-primary newsletter py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -224,7 +251,7 @@
         <!-- Newsletter End -->
 
 
-        <!-- Projects Start -->
+         <!-- Projects Start -->
         <div class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
@@ -237,6 +264,7 @@
                             <li class="mx-2 active" data-filter="*">Tout</li>
                             <li class="mx-2" data-filter=".first">Conception de sites web</li>
                             <li class="mx-2" data-filter=".second">Conception graphique</li>
+                            <li class="mx-2" data-filter=".second">Application mobile</li>
                         </ul>
                     </div>
                 </div>
@@ -244,7 +272,7 @@
                     <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                     <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
@@ -264,45 +292,45 @@
         <!-- Projects End -->
 
 
-        <!-- Testimonial Start -->
-        <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+         <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.05s">
             <div class="container py-5 px-lg-5">
-                <p class="section-title text-secondary justify-content-center"><span></span>Testimonial<span></span></p>
-                <h1 class="text-center mb-5">What Say Our Clients!</h1>
+                <p class="section-title text-secondary justify-content-center"><span></span>TÉMOIGNAGE<span></span></p>
+                <h1 class="text-center mb-5">Ce Qu'en Disent Nos Clients !</h1>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item bg-light rounded my-4">
                         <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                                <h5 class="mb-1">Elijah Walter</h5>
+                                <span>Commerçant</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded my-4">
                         <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                                <h5 class="mb-1">UZUMAKI Naruto</h5>
+                                <span>HOKAGE</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded my-4">
                         <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                                <h5 class="mb-1">THORFINE</h5>
+                                <span>Vikings-Soldat</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Testimonial End -->
 
 
@@ -317,7 +345,40 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4" src="{% static 'img/membre.jpg' %}" alt="">
+                                <h5>Elijah Walter</h5>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="{% static 'img/membre.jpg' %}" alt="">
+                                <h5>Elijah Walter</h5>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="{% static 'img/membre.jpg' %}" alt="">
                                 <h5>Elijah Walter</h5>
                                 <span>CEO & Founder</span>
                             </div>
