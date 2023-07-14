@@ -19,44 +19,63 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5 px-lg-5">
-            <div class="wow fadeInUp" data-wow-delay="0.1s">
-                <p class="section-title text-secondary justify-content-center"><span></span>Nos Projets<span></span></p>
-                <h1 class="text-center mb-5">Projets récemment achevés</h1>
+    
+<!-- Projects Start -->
+<div class="container-xxl py-5">
+    <div class="container py-5 px-lg-5">
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+            <p class="section-title text-secondary justify-content-center"><span></span>Nos Projets<span></span></p>
+            <h1 class="text-center mb-5">Projets en sours</h1>
+        </div>
+        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+                <ul class="list-inline mb-5" id="portfolio-flters">
+                    <li class="mx-2 active" data-filter="*">Tout</li>
+                    <li class="mx-2" data-filter=".first">Conception de sites web</li>
+                    <li class="mx-2" data-filter=".second">Conception graphique</li>
+                    <li class="mx-2" data-filter=".third">Application mobile</li>
+                </ul>
             </div>
-            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">Tout</li>
-                        <li class="mx-2" data-filter=".first">Conception de sites web</li>
-                        <li class="mx-2" data-filter=".second">Conception graphique</li>
-                        <li class="mx-2" data-filter=".second">Application mobile</li>
-                    </ul>
+        </div>
+        <div class="row g-4 portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio2.jpg' %}" alt="">
+                        <div class="portfolio-overlay">
+                            <a class="btn btn-square btn-outline-light mx-1" href="{% static 'img/portfolio2.jpg' %}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-light p-4">
+                        <p class="text-primary fw-medium mb-2">ARECO Village Artisanal</p>
+                        <h5 class="lh-base mb-0">
+                            l'accompagnement des femmes entrepreneures au village artisanal de ARECO 
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
-                            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
+                        <div class="portfolio-overlay">
+                            <a class="btn btn-square btn-outline-light mx-1" href="{% static 'img/portfolio-1.jpg' %}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
                         </div>
-                        <div class="bg-light p-4">
-                            <p class="text-primary fw-medium mb-2">Conception UI / UX</p>
-                            <h5 class="lh-base mb-0">
-                                Agence numérique Conception et développement de sites web
-                            </a>
-                        </div>
+                    </div>
+                    <div class="bg-light p-4">
+                        <p class="text-primary fw-medium mb-2">MIZMA App</p>
+                        <h5 class="lh-base mb-0">
+                            Une application mobile pour effectuer un don de sang
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Projects End -->
+</div>
+<!-- Projects End -->
 
 {% endblock content %}
